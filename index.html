@@ -3,118 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Fiscalização CAS-DF - Modelo Oficial</title>
-    <!-- Todo o CSS e HTML do sistema estaria aqui -->
-</head>
-<body>
-    <!-- Todo o conteúdo do sistema -->
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Fiscalização CAS-DF - Modelo Oficial</title>
-    <!-- Todo o CSS e HTML do sistema estaria aqui -->
-</head>
-<body>
-    <!-- Todo o conteúdo do sistema -->
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IncentivaBR - Demo para Investidores</title>
+    <title>IncentivaBR - Sistema Exclusivo para Servidores Públicos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .header { text-align: center; padding: 40px 0; }
-        .title { font-size: 3em; margin-bottom: 10px; }
-        .subtitle { font-size: 1.2em; opacity: 0.9; }
-        .inpi { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 25px; margin: 20px 0; display: inline-block; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 40px 0; }
-        .feature { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; text-align: center; }
-        .feature h3 { font-size: 1.5em; margin-bottom: 15px; }
-        .demo-btn { background: #10b981; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 1.2em; cursor: pointer; margin: 20px; }
-        .demo-btn:hover { background: #059669; transform: translateY(-2px); }
-        .contact { background: rgba(0,0,0,0.3); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: center; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .premium-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .premium-button {
+            background: linear-gradient(145deg, #3b82f6, #1d4ed8);
+            transition: all 0.3s ease;
+        }
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1 class="title">🛡️ IncentivaBR</h1>
-            <p class="subtitle">Sistema Exclusivo de Gestão de Incentivos Fiscais para Servidores Públicos</p>
-            <div class="inpi">📜 Registro INPI nº BR512025000647-0 - Tecnologia Protegida</div>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header Premium -->
+    <header class="gradient-bg text-white shadow-2xl">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">IncentivaBR</h1>
+                        <p class="text-blue-100 text-sm">Sistema Exclusivo Registrado INPI nº BR512025000647-0</p>
+                    </div>
+                </div>
+                <div class="glass-effect px-4 py-2 rounded-lg">
+                    <span class="text-sm font-semibold">🛡️ Compliance Fiscal Ativo</span>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div class="features">
-            <div class="feature">
-                <h3>🎯 Exclusividade Total</h3>
-                <p>Primeiro e único sistema do Brasil desenvolvido especificamente para servidores públicos</p>
-            </div>
-            <div class="feature">
-                <h3>🛡️ Compliance Fiscal Ativo</h3>
-                <p>Elimina 100% dos riscos fiscais com validação em tempo real</p>
-            </div>
-            <div class="feature">
-                <h3>⚡ MVP Funcional</h3>
-                <p>Sistema completo com 5 microsserviços integrados e interface premium</p>
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold mb-6">
+                    Transforme seu Imposto em <span class="text-yellow-300">Impacto Social</span>
+                </h2>
+                <p class="text-xl mb-8 text-blue-100">
+                    Plataforma exclusiva e legalmente protegida para destinação de recursos via incentivos fiscais
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="glass-effect p-6 rounded-xl">
+                        <i class="fas fa-certificate text-yellow-300 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2">Tecnologia Exclusiva</h3>
+                        <p class="text-sm text-blue-100">Registro INPI e proteção legal completa</p>
+                    </div>
+                    <div class="glass-effect p-6 rounded-xl">
+                        <i class="fas fa-users text-green-300 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2">Para Servidores Públicos</h3>
+                        <p class="text-sm text-blue-100">Único sistema do Brasil para este público</p>
+                    </div>
+                    <div class="glass-effect p-6 rounded-xl">
+                        <i class="fas fa-shield-check text-purple-300 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2">100% Seguro</h3>
+                        <p class="text-sm text-blue-100">Compliance fiscal ativo garantido</p>
+                    </div>
+                </div>
+                <button onclick="iniciarDemo()" class="premium-button text-white px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center space-x-2">
+                    <i class="fas fa-rocket"></i>
+                    <span>Iniciar Demonstração</span>
+                </button>
             </div>
         </div>
+    </section>
 
-        <div style="text-align: center;">
-            <button class="demo-btn" onclick="mostrarDemo()">🚀 Ver Demonstração Técnica</button>
-        </div>
+    <!-- Demo Section -->
+    <main class="container mx-auto px-4 py-12" id="demo-section" style="display: none;">
+        <div class="max-w-4xl mx-auto">
+            <div class="premium-card rounded-2xl p-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                    <i class="fas fa-play-circle text-blue-600 mr-3"></i>
+                    Demonstração Interativa
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Veja como o IncentivaBR revoluciona a destinação de incentivos fiscais
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="p-6 border-2 border-blue-200 rounded-xl hover:border-blue-400 transition-colors">
+                        <i class="fas fa-calculator text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Cálculo Inteligente</h3>
+                        <p class="text-sm text-gray-600">Descubra automaticamente seu potencial de destinação</p>
+                    </div>
+                    <div class="p-6 border-2 border-green-200 rounded-xl hover:border-green-400 transition-colors">
+                        <i class="fas fa-heart text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Projetos Curados</h3>
+                        <p class="text-sm text-gray-600">Marketplace exclusivo de projetos transformadores</p>
+                    </div>
+                    <div class="p-6 border-2 border-purple-200 rounded-xl hover:border-purple-400 transition-colors">
+                        <i class="fas fa-shield-check text-purple-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Compliance Ativo</h3>
+                        <p class="text-sm text-gray-600">Validação em tempo real elimina riscos fiscais</p>
+                    </div>
+                    <div class="p-6 border-2 border-orange-200 rounded-xl hover:border-orange-400 transition-colors">
+                        <i class="fas fa-certificate text-orange-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Documentação Blindada</h3>
+                        <p class="text-sm text-gray-600">Recibos certificados digitalmente</p>
+                    </div>
+                </div>
 
-        <div id="demo" style="display: none; background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; margin: 30px 0;">
-            <h2>📊 Arquitetura Técnica</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0;">
-                <div style="background: rgba(59,130,246,0.3); padding: 15px; border-radius: 10px;">
-                    <strong>🧮 Calculadora Fiscal</strong><br>
-                    <small>Porta 8021 - Cálculo automático de limites</small>
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                        🎯 MVP Funcional Completo
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        Sistema com 5 microsserviços integrados, interface premium e demonstração funcional para investidores
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-4 rounded-lg">
+                            <i class="fas fa-cogs text-blue-600 mb-2"></i>
+                            <p><strong>Backend:</strong> 5 microsserviços Python/FastAPI</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <i class="fas fa-desktop text-green-600 mb-2"></i>
+                            <p><strong>Frontend:</strong> Interface premium responsiva</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <i class="fas fa-database text-purple-600 mb-2"></i>
+                            <p><strong>Integração:</strong> API SALIC + Redis + PostgreSQL</p>
+                        </div>
+                    </div>
                 </div>
-                <div style="background: rgba(16,185,129,0.3); padding: 15px; border-radius: 10px;">
-                    <strong>🎨 Projetos SALIC</strong><br>
-                    <small>Porta 8013 - Integração API Ministério</small>
+
+                <div class="bg-green-100 border border-green-200 rounded-xl p-6 mb-8">
+                    <h4 class="text-lg font-bold text-green-800 mb-3">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Sistema Pronto para Demonstração
+                    </h4>
+                    <p class="text-green-700 mb-4">
+                        MVP técnico funcional com todos os componentes integrados:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm text-green-700">
+                        <div>
+                            ✅ Calculadora fiscal inteligente<br>
+                            ✅ Marketplace de projetos SALIC<br>
+                            ✅ Sistema de compliance ativo
+                        </div>
+                        <div>
+                            ✅ Documentação automatizada<br>
+                            ✅ Dashboard de impacto social<br>
+                            ✅ Interface premium para investidores
+                        </div>
+                    </div>
                 </div>
-                <div style="background: rgba(139,92,246,0.3); padding: 15px; border-radius: 10px;">
-                    <strong>💰 Gestão Fundos</strong><br>
-                    <small>Porta 8016 - Simulação aportes</small>
-                </div>
-                <div style="background: rgba(245,101,101,0.3); padding: 15px; border-radius: 10px;">
-                    <strong>📄 Compliance</strong><br>
-                    <small>Porta 8017 - Documentação blindada</small>
-                </div>
-                <div style="background: rgba(251,191,36,0.3); padding: 15px; border-radius: 10px;">
-                    <strong>📊 Dashboard</strong><br>
-                    <small>Porta 8019 - Impacto social</small>
+
+                <div class="text-center">
+                    <button onclick="mostrarContato()" class="premium-button text-white px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center space-x-2">
+                        <i class="fas fa-handshake"></i>
+                        <span>Agendar Demonstração Completa</span>
+                    </button>
                 </div>
             </div>
-            
-            <h3>💡 Potencial de Mercado</h3>
-            <p><strong>12+ milhões</strong> de servidores públicos no Brasil</p>
-            <p><strong>Mercado virgem</strong> - nenhum concorrente direto identificado</p>
-            <p><strong>Tecnologia protegida</strong> - barreira de entrada garantida</p>
         </div>
+    </main>
 
-        <div class="contact">
-            <h2>📞 Demonstração para Investidores</h2>
-            <p><strong>Adacto Artur Dornas de Oliveira</strong></p>
-            <p>📧 adactoartur.gestor@gmail.com</p>
-            <p>📱 +55 61 99968-2929</p>
-            <p>📍 Brasília-DF</p>
-            <div style="margin-top: 20px;">
-                <strong>Sistema MVP completo pronto para apresentação técnica</strong>
+    <!-- Contact Section -->
+    <section id="contato-section" class="bg-gray-900 text-white py-12" style="display: none;">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">
+                    <i class="fas fa-calendar-alt text-blue-400 mr-3"></i>
+                    Demonstração para Investidores
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Sistema completo e funcional pronto para apresentação
+                </p>
+                
+                <div class="bg-gray-800 rounded-xl p-8 mb-8">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Contato do Proprietário</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex items-center justify-center space-x-3">
+                            <i class="fas fa-user text-blue-400"></i>
+                            <span>Adacto Artur Dornas de Oliveira</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-3">
+                            <i class="fas fa-envelope text-green-400"></i>
+                            <span>adactoartur.gestor@gmail.com</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-3">
+                            <i class="fas fa-phone text-purple-400"></i>
+                            <span>+55 61 99968-2929</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-red-400"></i>
+                            <span>Brasília-DF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-blue-900 p-6 rounded-xl">
+                        <i class="fas fa-shield-alt text-yellow-400 text-2xl mb-3"></i>
+                        <h4 class="font-bold mb-2">Proteção Legal</h4>
+                        <p class="text-sm text-gray-300">INPI nº BR512025000647-0</p>
+                    </div>
+                    <div class="bg-green-900 p-6 rounded-xl">
+                        <i class="fas fa-users text-blue-400 text-2xl mb-3"></i>
+                        <h4 class="font-bold mb-2">Mercado Exclusivo</h4>
+                        <p class="text-sm text-gray-300">12+ milhões de servidores</p>
+                    </div>
+                    <div class="bg-purple-900 p-6 rounded-xl">
+                        <i class="fas fa-chart-line text-green-400 text-2xl mb-3"></i>
+                        <h4 class="font-bold mb-2">MVP Funcional</h4>
+                        <p class="text-sm text-gray-300">Pronto para investimento</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <div class="inline-flex items-center space-x-4">
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold">IncentivaBR</span>
+                </div>
+            </div>
+            <p class="text-gray-400 mb-2">Sistema Integrado de Gestão de Incentivos Fiscais com Compliance Fiscal Ativo</p>
+            <p class="text-sm text-gray-500">Registro INPI nº BR512025000647-0 | Tecnologia Exclusiva e Protegida</p>
+        </div>
+    </footer>
 
     <script>
-        function mostrarDemo() {
-            document.getElementById('demo').style.display = 'block';
-            document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });
+        function iniciarDemo() {
+            document.getElementById('demo-section').style.display = 'block';
+            document.getElementById('demo-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function mostrarContato() {
+            document.getElementById('contato-section').style.display = 'block';
+            document.getElementById('contato-section').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
